@@ -1,0 +1,19 @@
+package com.mystudy.ipcat;
+
+class threadClass extends Thread{
+	public threadClass() {
+		System.out.println("aaa");
+	}
+}
+
+public class test1 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Ω√¿€");
+		threadClass tc = new threadClass();
+		tc.start();
+		System.out.println("≥°");
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.bankplay;
+
+import java.util.HashMap;
+import java.util.InputMismatchException;
+import java.util.Map;
+import java.util.Scanner;
+
+public class ATM_system {
+	static Scanner scan = new Scanner(System.in);
+	
+	Map<String ,AccountVO> accountMap = new HashMap<>();
+	static public void ATMdisplay() {
+		AccountVO account = new AccountVO();
+		interFace();
+	}
+	
+	private static void interFace() {
+		int temp;
+		System.out.println("======================");
+		System.out.println("======================");
+		System.out.println("======================");
+		
+		while(true) {
+			try {
+				System.out.print(">>");
+				temp = scan.nextInt();
+			}catch (InputMismatchException e) {
+				scan = new Scanner(System.in);
+				System.out.println("에러 발생 다시입력해주세요.");
+			}
+		}
+//		switch (key) {
+//		case value:
+//			
+//			break;
+//
+//		default:
+//			break;
+//		}
+	}
+	
+	
+	
+	
+	
+
+}

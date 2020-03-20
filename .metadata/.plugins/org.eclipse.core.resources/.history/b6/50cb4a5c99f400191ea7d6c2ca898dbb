@@ -1,0 +1,28 @@
+package com.mystudy.ex01_scanner;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ScannerExam3_Scissors {
+	public static void main(String[] args) {
+		//scanner 를 이용한 가위 바위 보 게임
+//		123 -1 -2 일시 승리
+//		312 1 2일시 승리
+//		0일시 무승부
+		print();
+	}
+	
+}
+class Scissors{
+	final Map<Integer, String> hand = new HashMap<Integer, String>() {
+		{
+			hand.put(1, "가위");
+			hand.put(2, "바위");
+			hand.put(3, "보");
+		}
+	};
+	void print() {
+		System.out.println(hand);
+	}
+	
+}

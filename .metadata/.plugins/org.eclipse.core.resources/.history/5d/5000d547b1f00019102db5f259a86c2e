@@ -1,0 +1,28 @@
+package com.mystudy;
+
+class StudentVO {
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int tot;
+	private double avr;
+	
+	StudentVO() {
+		super();
+
+	}
+	StudentVO(String name, int kor, int eng, int math) {
+		super();
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
+
+	
+	void diplye() {
+		System.out.printf("%s\t%d\t%d\t%d",name,kor,eng,math);
+	}
+}
+

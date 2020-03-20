@@ -1,0 +1,17 @@
+package com.mystudy.ojdbc;
+
+public class StudentManager_Select {
+
+	public static void main(String[] args) {
+		//0.JDBC 라이브러리 개발환경 설정(빌드경로에 등록)
+		//1.JDBC 드라이버 로딩
+		try {
+			Class.forName("oracle.jdbc.OracleDriver");
+			System.out.println(">> 드라이버 로딩 성공");
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

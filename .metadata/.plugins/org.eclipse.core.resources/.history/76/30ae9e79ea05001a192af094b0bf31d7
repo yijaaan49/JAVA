@@ -1,0 +1,19 @@
+package com.mystudy.jdbc_dao;
+
+import java.util.List;
+
+public class MemberDAO_Test {
+	public static void main(String[] args) {
+		MemberDAO dao = new MemberDAO();
+		List<MemberVO> list = dao.selectAll();
+		for(MemberVO mvo : list) {
+			System.out.println(mvo.toString());
+		}
+		boolean isExist = dao.checkIdPassword("hong4", "1234");
+		if(isExist) {
+			System.out.println("있음");
+		}else {
+			System.out.println("없음");
+		}
+	}
+}

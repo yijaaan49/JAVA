@@ -1,0 +1,13 @@
+package com.mystudy;
+
+public class StudentVO {
+	String name;
+	int kor;
+	int eng;
+	int math;
+	
+	void diplye() {
+		System.out.printf("%s\t%d\t%d\t%d",name,kor,eng,math);
+	}
+}
+

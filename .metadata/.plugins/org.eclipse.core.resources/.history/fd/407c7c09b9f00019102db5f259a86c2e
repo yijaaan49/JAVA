@@ -1,0 +1,76 @@
+package com.mystudy;
+
+class StudentVO {
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int tot;
+	private double avr;
+	
+	StudentVO() {
+		super();
+
+	}
+	StudentVO(String name, int kor, int eng, int math) {
+		super();
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		studentAvr();
+	}
+
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getKor() {
+		return kor;
+	}
+	
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+	
+	public int getEng() {
+		return eng;
+	}
+	
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+	
+	public int getMath() {
+		return math;
+	}
+	
+	public void setMath(int math) {
+		this.math = math;
+	}
+	
+	void studentTot() {
+		tot = kor + eng + math;
+	}
+	public void studentAvr() {
+		studentTot();
+		avr = ((int)(tot / 3.0 * 1000 + 0.5)) / 1000.0 ;
+	}
+	
+	void diplye() {
+		System.out.printf("%s\t%d\t%d\t%d\t%d\t%.2f\n",name ,kor ,eng , math, tot, avr);
+	}
+	@Override
+	public String toString() {
+		return "StudentVO [name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + ", tot=" + tot
+				+ ", avr=" + avr + "]";
+	}
+	
+	
+}
+

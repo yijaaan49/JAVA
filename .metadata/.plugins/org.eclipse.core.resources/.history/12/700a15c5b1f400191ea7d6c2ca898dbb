@@ -1,0 +1,19 @@
+package com.mystudy.ex01_scanner;
+
+public class ScannerExam4 {
+	public static void main(String[] args) {
+		RandomNum random = new RandomNum();
+	}
+	
+}
+class RandomNum {
+	public void disPlay() {
+		
+	}
+	
+	
+	private void random() {
+		int num = (int)(Math.random() * 100 + 1);
+		
+	}
+}

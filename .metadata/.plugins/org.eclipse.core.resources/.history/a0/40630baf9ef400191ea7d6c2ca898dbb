@@ -1,0 +1,41 @@
+package com.mystudy.ex01_scanner;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class ScannerExam3_Scissors {
+	public static void main(String[] args) {
+		//scanner 를 이용한 가위 바위 보 게임
+//		123 -1 -2 일시 승리
+//		312 1 2일시 승리
+//		0일시 무승부
+		scissors.displye();
+	}
+	
+}
+class scissors{
+	private static final Map<Integer, String> HAND = 
+			new HashMap<>();
+			static{
+				HAND.put(1, "가위");
+				HAND.put(2, "바위");
+				HAND.put(3, "보");
+			}
+	private int comp() {
+		int handKey = (int)(Math.random()*3+1);
+		System.out.println("컴퓨터는 " + HAND.get(handKey)
+				+ " 를 냈습니다");
+		return handKey;
+	}
+	static void displye() {
+		Scanner scan = new Scanner(System.in);
+		int playHand;
+		while(true) {
+			playHand = scan.nextInt();
+		}
+	}
+	
+	
+}

@@ -1,0 +1,25 @@
+package com.mystudy.ipcat;
+
+class threadClass extends Thread{
+	public threadClass() {
+		super();
+		for(int i = 0 ; i < 10 ; i++)
+		System.out.println("aaa");
+	}
+	public void run () {
+		for(int i = 0 ; i < 10 ; i++)
+		System.out.println("bbb");
+	}
+}
+
+public class test1 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("½ÃÀÛ");
+		threadClass tc = new threadClass();
+		tc.start();
+		System.out.println("³¡");
+	}
+
+}

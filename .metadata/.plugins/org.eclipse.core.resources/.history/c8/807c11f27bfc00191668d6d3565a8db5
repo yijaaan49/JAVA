@@ -1,0 +1,10 @@
+package com.mystudy.ojdbc;
+
+public class StudentManager_Select {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

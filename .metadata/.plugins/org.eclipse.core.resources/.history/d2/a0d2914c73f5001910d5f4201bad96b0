@@ -1,0 +1,30 @@
+package com.mystudy.ex01_random;
+
+import java.util.Calendar;
+import java.util.Random;
+
+public class RandomExam3 {
+	public static void main(String[] args) {
+		//실습 오늘 당신의 행운지수 알아보기 0~100 까지 알아보기 
+		//Math.random(), Random 사용해서 행운지수 값 만들기
+		//실행결과
+		//2019년 10 월 23일 당신의 행운지수(0~100)는 77입니다.
+		Random ran = new Random();
+		int result = 0;
+		String strA = " 당신의 행운지수(0 ~ 100)는 ";
+		Calendar calendar = Calendar.getInstance();
+		int year = calendar.get(Calendar.YEAR);
+		int month = calendar.get(Calendar.MONTH)+1;//0~11
+		int date = calendar.get(Calendar.DATE);
+
+		StringBuilder strB = new StringBuilder();
+		strB.append(year).append("년").append(month).
+				append("월").append(date).append("일");
+		//실습 1 - Random nextInt 숫자
+		//실습2 - math.random();
+		result = ran.nextInt(101);
+		System.out.println(strB.toString() + strA + result);
+		
+		result = (int)(Math.random()* 101);
+	}
+}

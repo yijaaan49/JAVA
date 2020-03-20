@@ -1,0 +1,23 @@
+package com.mystudy.ex01_random;
+
+import java.util.Random;
+
+public class RandomExam1 {
+
+	public static void main(String[] args) {
+		/*	Random : 난수(임의의 수)를 생성하는 클래스
+		 * 	정수추출 : nextInt() - int 타입의 난수 발생
+		 * 			nextInt(10) - 0~9 범위의 정수형 난수 발생
+		 * 			nextLong() - long 타입의 난수 발생
+		 * 
+		 */
+		Random ra = new Random();
+		System.out.println(ra.nextInt(5));
+		System.out.println(ra.nextInt(5));
+		System.out.println(ra.nextInt(5));
+		System.out.println(ra.nextInt(5));
+		System.out.println(ra.nextInt(5));
+		System.out.println(ra.nextInt(5));
+	}
+
+}

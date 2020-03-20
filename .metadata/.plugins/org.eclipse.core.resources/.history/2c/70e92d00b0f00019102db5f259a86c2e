@@ -1,0 +1,11 @@
+package com.mystudy;
+import java.util.ArrayList;
+public class StudentManager {
+	public static void main(String[] args) {
+		StudentVO std = new StudentVO();
+		ArrayList<StudentVO> list1 = new ArrayList<StudentVO>();
+		std.name = "ȫ�浿";
+		list1.add(std);
+		System.out.println(list1.get(0));
+	}
+}

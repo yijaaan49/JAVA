@@ -1,0 +1,42 @@
+package kjjkl;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server {
+	public static void main(String[] args) {
+		ServerSocket server = null;
+		try {
+			server = new ServerSocket(10000);
+			Socket so = server.accept();
+			inputS in = new inputS(so);
+			in.start();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+class inputS extends Thread{
+	Socket so;
+	InputStream is = null;
+	InputStreamReader ir = null;
+	inputS(Socket so){
+		super();
+		this.so = so;
+		
+	}
+	public void run() {
+		try {
+			is = so.getInputStream();
+			ir = InputStreamReader(is);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("연결완료");
+	}
+}

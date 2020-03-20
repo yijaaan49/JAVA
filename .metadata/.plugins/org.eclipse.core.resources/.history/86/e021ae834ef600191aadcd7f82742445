@@ -1,0 +1,40 @@
+package com.bankplay;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class ATM_system {
+	static Scanner scan = new Scanner(System.in);
+	
+	Map<String ,AccountVO> accountMap = new HashMap<>();
+	static public void ATMdisplay() {
+		AccountVO account = new AccountVO();
+		while(true) {
+		}
+		
+	}
+	
+	private static void interFace() {
+		int temp;
+		System.out.println("======================");
+		System.out.println("======================");
+		System.out.println("======================");
+		System.out.print(">>");
+		temp = scan.nextInt();
+		switch (key) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+	
+	
+	
+	
+	
+
+}

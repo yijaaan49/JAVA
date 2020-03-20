@@ -1,0 +1,8 @@
+package com.mystudy.ex01_random;
+
+public class RandomExam2 {
+
+	private void sysout() {
+		Random ran = new Random();
+	}
+}

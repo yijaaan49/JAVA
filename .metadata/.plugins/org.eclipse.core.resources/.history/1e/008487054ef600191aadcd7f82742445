@@ -1,0 +1,26 @@
+package com.bankplay;
+
+import java.util.Map;
+import java.util.Scanner;
+
+public class ATM_system {
+	Scanner scan = new Scanner(System.in);
+	AccountVO[] accountvo = new AccountVO[1];
+	static public void ATMdisplay() {
+		while(true) {
+			interFace();
+			
+		}
+		
+	}
+	
+	private static void interFace() {
+		System.out.println("======================");
+		System.out.println("======================");
+		System.out.println("======================");
+	}
+	
+	
+	
+
+}

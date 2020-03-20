@@ -1,0 +1,16 @@
+package com.mystudy.ex01_scanner;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ScannerExam3_Scissors {
+	public static void main(String[] args) {
+		//scanner 를 이용한 가위 바위 보 게임
+//		123 -1 -2 일시 승리
+//		312 1 2일시 승리
+//		0일시 무승부
+	}
+}
+class Scissors{
+	Map<Integer, String> hand = HashMap<>();
+}

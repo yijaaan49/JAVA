@@ -1,0 +1,11 @@
+package com.mystudy.ex01_random;
+
+import java.util.Random;
+
+public class RandomExam3 {
+	public static void main(String[] args) {
+		//실습 오늘 당신의 행운지수 알아보기 0~100 까지 알아보기 
+		
+		Random ran = new Random();
+	}
+}

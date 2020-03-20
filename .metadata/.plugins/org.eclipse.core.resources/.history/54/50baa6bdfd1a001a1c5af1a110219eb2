@@ -1,0 +1,14 @@
+package test;
+
+public class mainTest {
+	int a = 1;
+	int b = 2;
+	
+	public int sum() {
+		return a+b;
+	}
+	
+	public static void main(String[] args) {
+		sum();
+	}
+}
